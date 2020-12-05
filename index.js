@@ -19,6 +19,7 @@ function greet(s){
   timeH[0]=roughScale(timeH[0], 10);
   timeH[1]=roughScale(timeH[1], 10);
 
+<<<<<<< HEAD
   if(timeH[1]>0){
     timeH[0]++;
   }
@@ -43,3 +44,25 @@ function displayMessage(s){
   
 }
   
+=======
+function greet(s){
+  s="18:01";
+  let timeH=s.split(":");
+  if(timeH[1]>00){
+    timeH[0]++;
+  }
+  if(timeH[0] <= 12){
+    return "Good Morning";
+  }
+   if(timeH[0] >12 && timeH[0]< 17){
+    return "Good Afternoon";
+  }
+ 
+    return "Good Evening";
+  
+}
+   
+  
+}
+/* Write your implementation of displayMessage() */
+>>>>>>> 670478f8a6eda0803d81f5c880c272bb99d50a4e
